@@ -68,4 +68,76 @@
     });
   }
 
+  /* --- FAQ page : recherche + filtres catégoriels --------------------- */
+  const faqSearch = document.querySelector('#faq-search-input');
+  const faqPills = document.querySelectorAll('.faq-pill');
+  const faqGroups = document.querySelectorAll('.faq-group');
+  const faqEmpty = document.querySelector('.faq-empty');
+
+  if (faqSearch && faqGroups.length) {
+    let activeCategory = 'all';
+
+    function normalize(str) {
+      return str.toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '');  // sans accents
+    }
+
+    function applyFilters() {
+      const query = normalize(faqSearch.value.trim());
+      let totalVisible = 0;
+
+      faqGroups.forEach(function (group) {
+        const groupCat = group.dataset.category;
+        const categoryMatch = activeCategory === 'all' || activeCategory === groupCat;
+        let groupVisible = 0;
+
+        group.querySelectorAll('.faq-item').forEach(function (item) {
+          const txt = normalize(item.textContent);
+          const queryMatch = !query || txt.includes(query);
+
+          if (categoryMatch && queryMatch) {
+            item.classList.remove('hidden');
+            groupVisible++;
+            totalVisible++;
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        // Cache le groupe entier s'il n'a aucun item visible
+        group.style.display = groupVisible === 0 ? 'none' : '';
+      });
+
+      // Message "aucun résultat"
+      if (faqEmpty) {
+        faqEmpty.classList.toggle('show', totalVisible === 0);
+      }
+    }
+
+    // Recherche en direct (debounce léger)
+    let searchTimeout;
+    faqSearch.addEventListener('input', function () {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(applyFilters, 120);
+    });
+
+    // Filtres catégoriels
+    faqPills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        faqPills.forEach(function (p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        activeCategory = pill.dataset.category || 'all';
+        applyFilters();
+      });
+    });
+
+    // Effacer la recherche avec Échap
+    faqSearch.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && faqSearch.value) {
+        faqSearch.value = '';
+        applyFilters();
+      }
+    });
+  }
+
 })();

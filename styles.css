@@ -814,6 +814,363 @@ h1, h2, h3, h4 {
   border-color: #B8985A;
 }
 
+/* --- FAQ page : recherche + filtres catégoriels ------------------------ */
+.faq-toolbar {
+  position: sticky;
+  top: 76px;  /* sous le header sticky */
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-2) 0;
+  z-index: 50;
+  margin-bottom: var(--space-3);
+}
+.faq-toolbar-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+.faq-search {
+  position: relative;
+  margin-bottom: var(--space-2);
+}
+.faq-search input {
+  width: 100%;
+  padding: 12px 16px 12px 42px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-family: inherit;
+  background: var(--bg-soft);
+  color: var(--ink);
+  transition: border-color .2s ease, background .2s ease;
+}
+.faq-search input:focus {
+  outline: none;
+  border-color: var(--brand);
+  background: var(--bg);
+}
+.faq-search::before {
+  content: '🔍';
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  opacity: .6;
+}
+.faq-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.faq-pill {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--ink-soft);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all .2s ease;
+  white-space: nowrap;
+}
+.faq-pill:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+.faq-pill.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #FFFFFF;
+}
+.faq-pill .pill-count {
+  opacity: .7;
+  margin-left: 4px;
+  font-size: 11px;
+}
+
+/* Groupes FAQ */
+.faq-group {
+  margin-bottom: var(--space-5);
+}
+.faq-group-title {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--brand-dark);
+  margin: 0 0 var(--space-2);
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--brand-light);
+  scroll-margin-top: 160px;  /* offset header + toolbar sticky */
+}
+.faq-group .faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-2) 0;
+}
+.faq-group .faq-item.hidden {
+  display: none;
+}
+
+/* État "aucun résultat" */
+.faq-empty {
+  text-align: center;
+  padding: var(--space-5) var(--space-3);
+  color: var(--ink-soft);
+  display: none;
+}
+.faq-empty.show { display: block; }
+.faq-empty h3 {
+  font-size: 18px;
+  margin-bottom: var(--space-1);
+  color: var(--brand-dark);
+}
+
+/* Mise en évidence des résultats de recherche */
+.faq-item mark {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 760px;
+  margin: var(--space-5) auto;
+  padding-left: var(--space-4);
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--brand) 0%, var(--brand) 90%, var(--accent) 100%);
+}
+.timeline-step {
+  position: relative;
+  padding-bottom: var(--space-4);
+  padding-left: var(--space-4);
+}
+.timeline-step:last-child { padding-bottom: 0; }
+.timeline-step::before {
+  content: counter(timeline-counter);
+  counter-increment: timeline-counter;
+  position: absolute;
+  left: -22px;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  background: var(--brand);
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 18px;
+  font-weight: 500;
+  border: 4px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--border);
+}
+.timeline { counter-reset: timeline-counter; }
+.timeline-step h3 {
+  font-size: 22px;
+  margin: 4px 0 8px;
+  color: var(--brand-dark);
+}
+.timeline-step .timeline-duration {
+  display: inline-block;
+  font-size: 12px;
+  background: var(--brand-light);
+  color: var(--brand-dark);
+  padding: 3px 10px;
+  border-radius: 12px;
+  letter-spacing: .03em;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.timeline-step p {
+  color: var(--ink);
+  margin: 0 0 var(--space-1);
+  line-height: 1.6;
+}
+.timeline-step p:last-child { margin: 0; }
+.timeline-step .timeline-details {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-2);
+  margin-top: var(--space-1);
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.timeline-step .timeline-details strong { color: var(--brand-dark); font-weight: 500; }
+
+/* --- Two-columns Do / Don't list --------------------------------------- */
+.do-dont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+.do-dont .do-card,
+.do-dont .dont-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+.do-dont .do-card { border-top: 4px solid var(--brand); }
+.do-dont .dont-card { border-top: 4px solid #B8B8B8; }
+.do-dont h3 {
+  font-size: 18px;
+  margin: 0 0 var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.do-dont .do-card h3 { color: var(--brand-dark); }
+.do-dont .dont-card h3 { color: var(--ink); }
+.do-dont ul { list-style: none; padding: 0; margin: 0; }
+.do-dont li {
+  padding: 8px 0 8px 26px;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--border);
+}
+.do-dont li:last-child { border-bottom: none; }
+.do-dont .do-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: var(--brand);
+  font-weight: 500;
+  font-size: 16px;
+}
+.do-dont .dont-card li::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #B8B8B8;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* --- Comparison "with vs without" -------------------------------------- */
+.compare-with-without {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+.compare-col {
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+.compare-col-bad {
+  background: #FAFAF7;
+  border: 1px solid var(--border);
+  color: var(--ink);
+}
+.compare-col-good {
+  background: var(--brand-light);
+  border: 1px solid var(--brand);
+}
+.compare-col h3 {
+  font-size: 18px;
+  margin: 0 0 var(--space-2);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+}
+.compare-col-bad h3 { color: var(--ink); }
+.compare-col-good h3 { color: var(--brand-dark); }
+.compare-col ul { list-style: none; padding: 0; margin: 0; }
+.compare-col li {
+  padding: 6px 0 6px 22px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.compare-col-bad li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--ink-soft);
+}
+.compare-col-good li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--brand);
+  font-weight: 500;
+}
+.compare-summary {
+  text-align: center;
+  margin-top: var(--space-2);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--brand-dark);
+}
+
+/* --- Garantie cards ---------------------------------------------------- */
+.guarantees {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+.guarantee-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  text-align: center;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.guarantee-card:hover { border-color: var(--brand); transform: translateY(-2px); }
+.guarantee-icon {
+  display: inline-flex;
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-light);
+  color: var(--brand);
+  border-radius: 50%;
+  font-size: 22px;
+  margin-bottom: var(--space-2);
+}
+.guarantee-card h3 {
+  font-size: 17px;
+  margin: 0 0 8px;
+  color: var(--brand-dark);
+}
+.guarantee-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive trust page */
+@media (max-width: 900px) {
+  .do-dont,
+  .compare-with-without,
+  .guarantees {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Responsive money page */
 @media (max-width: 900px) {
   .page-content {

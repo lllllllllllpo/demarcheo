@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Pages tunnel non indexables (à activer quand le funnel sera en place)
+Disallow: /commande/
+Disallow: /merci/
+
+# Sitemap
+Sitemap: https://www.demarcheo.fr/sitemap.xml
