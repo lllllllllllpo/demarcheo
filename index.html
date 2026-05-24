@@ -4,27 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <title>Démarchéo — Demande d'acte de naissance en ligne | 34€ TTC</title>
-  <meta name="description" content="Service privé d'assistance pour vos démarches administratives. Acte de naissance traité sous 24h, reçu par courrier. À partir de 34€ TTC frais postaux inclus.">
+  <!-- SEO principal -->
+  <title>Acte de naissance : demande en ligne sous 24h | Démarchéo</title>
+  <meta name="description" content="Demande d'acte de naissance en ligne : copie intégrale, extrait avec ou sans filiation. Service privé d'assistance, traitement sous 24h, livré par la mairie compétente.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://www.demarcheo.fr/">
+  <link rel="canonical" href="https://www.demarcheo.fr/acte-de-naissance/">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="Démarchéo">
-  <meta property="og:title" content="Démarchéo — Demande d'acte de naissance en ligne | 34€ TTC">
-  <meta property="og:description" content="Service privé d'assistance pour vos démarches administratives. Acte de naissance traité sous 24h.">
-  <meta property="og:url" content="https://www.demarcheo.fr/">
-  <meta property="og:image" content="https://www.demarcheo.fr/og-image.jpg">
+  <meta property="og:title" content="Acte de naissance : demande en ligne sous 24h | Démarchéo">
+  <meta property="og:description" content="Service privé d'assistance pour obtenir votre acte de naissance. Copie intégrale, extrait avec ou sans filiation.">
+  <meta property="og:url" content="https://www.demarcheo.fr/acte-de-naissance/">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Démarchéo — Demande d'acte de naissance en ligne">
-  <meta name="twitter:description" content="Service privé d'assistance pour vos démarches administratives.">
+  <meta name="twitter:title" content="Acte de naissance : demande en ligne sous 24h">
+  <meta name="twitter:description" content="Service privé d'assistance pour obtenir votre acte de naissance.">
 
-  <!-- Favicon -->
+  <!-- Favicon (cohérent avec home) -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231F4A3A' rx='16'/><rect x='22' y='22' width='56' height='56' fill='none' stroke='%23C8A961' stroke-width='6' rx='8'/></svg>">
 
   <!-- Fonts -->
@@ -32,43 +30,69 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Source+Serif+Pro:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Styles (lien relatif depuis /acte-de-naissance/) -->
+  <link rel="stylesheet" href="../styles.css">
 
-  <!-- Schema.org : Organization + WebSite -->
+  <!-- Schema.org : Article + BreadcrumbList + FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": "https://www.demarcheo.fr/#organization",
-        "name": "Démarchéo",
-        "url": "https://www.demarcheo.fr/",
-        "logo": "https://www.demarcheo.fr/logo.png",
-        "description": "Service privé d'assistance aux démarches administratives. Indépendant de l'administration française.",
-        "sameAs": []
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.demarcheo.fr/" },
+          { "@type": "ListItem", "position": 2, "name": "Acte de naissance", "item": "https://www.demarcheo.fr/acte-de-naissance/" }
+        ]
       },
       {
-        "@type": "WebSite",
-        "@id": "https://www.demarcheo.fr/#website",
-        "url": "https://www.demarcheo.fr/",
-        "name": "Démarchéo",
-        "publisher": { "@id": "https://www.demarcheo.fr/#organization" },
-        "inLanguage": "fr-FR"
+        "@type": "Article",
+        "headline": "Acte de naissance : demande en ligne sous 24h",
+        "description": "Guide complet pour demander votre acte de naissance en ligne avec Démarchéo.",
+        "author": { "@type": "Organization", "name": "Démarchéo" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Démarchéo",
+          "logo": { "@type": "ImageObject", "url": "https://www.demarcheo.fr/logo.png" }
+        },
+        "inLanguage": "fr-FR",
+        "datePublished": "2026-05-24",
+        "dateModified": "2026-05-24"
       },
       {
-        "@type": "Service",
-        "name": "Demande d'acte de naissance",
-        "provider": { "@id": "https://www.demarcheo.fr/#organization" },
-        "areaServed": "FR",
-        "description": "Assistance pour l'obtention d'un acte de naissance (copie intégrale, extrait avec ou sans filiation) auprès de la mairie compétente.",
-        "offers": {
-          "@type": "Offer",
-          "price": "34.00",
-          "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock"
-        }
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce qu'un acte de naissance ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "L'acte de naissance est un document officiel rédigé par un officier d'état civil au moment de la déclaration de naissance. Il atteste de l'identité d'une personne et est exigé pour de nombreuses démarches : mariage, passeport, succession, naturalisation." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels sont les 3 types d'actes de naissance ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Il existe trois versions : la copie intégrale (toutes les informations, dont les parents et mentions marginales), l'extrait avec filiation (synthèse incluant les parents) et l'extrait sans filiation (synthèse sans les parents, accessible sans justificatif)." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel délai pour recevoir un acte de naissance ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Avec Démarchéo, votre demande est transmise à la mairie compétente sous 24 heures ouvrées. L'acte est ensuite envoyé par la mairie par courrier postal, sous 3 à 10 jours ouvrés selon la commune." }
+          },
+          {
+            "@type": "Question",
+            "name": "Qui peut demander un acte de naissance ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "La copie intégrale et l'extrait avec filiation sont réservés à la personne concernée, son conjoint, ses parents, grands-parents, descendants ou un avocat mandaté. L'extrait sans filiation peut être demandé par toute personne sans justificatif." }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment obtenir un acte de naissance pour un Français né à l'étranger ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pour les Français nés à l'étranger, la demande doit être adressée au Service Central d'État Civil (SCEC) du ministère des Affaires étrangères à Nantes. Démarchéo prend en charge cette démarche pour vous." }
+          },
+          {
+            "@type": "Question",
+            "name": "Démarchéo est-il un site officiel ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Non. Démarchéo est un service privé indépendant de l'administration française. Cette démarche peut être effectuée gratuitement sur le site officiel service-public.fr. Notre service consiste à vous accompagner et à prendre en charge ces démarches pour vous faire gagner du temps." }
+          }
+        ]
       }
     ]
   }
@@ -76,25 +100,23 @@
 </head>
 <body>
 
-  <!-- Bandeau légal obligatoire (anti-DGCCRF) -->
+  <!-- Bandeau légal (cohérent avec homepage) -->
   <div class="legal-bar" role="note">
     Service privé indépendant de l'administration française. Démarches disponibles gratuitement sur <a href="https://www.service-public.fr" target="_blank" rel="noopener">service-public.fr</a>.
   </div>
 
-  <!-- Header -->
+  <!-- Header (identique à la home) -->
   <header class="site-header">
     <div class="header-inner">
       <a href="/" class="logo" aria-label="Démarchéo, accueil">
         <span class="logo-mark" aria-hidden="true"></span>Démarchéo
       </a>
-
       <nav class="nav-main" aria-label="Navigation principale">
         <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
         <ul>
-          <li><a href="/acte-de-naissance/">Acte de naissance</a></li>
-          <li><a href="#comment-ca-marche">Comment ça marche</a></li>
-          <li><a href="#tarifs">Tarifs</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="/acte-de-naissance/" aria-current="page">Acte de naissance</a></li>
+          <li><a href="/comment-ca-marche/">Comment ça marche</a></li>
+          <li><a href="/faq/">FAQ</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="/commande/" class="btn btn-primary" style="padding: 8px 18px; font-size: 14px;">Commencer</a></li>
         </ul>
@@ -102,307 +124,302 @@
     </div>
   </header>
 
+  <!-- Fil d'Ariane -->
+  <nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <ol>
+      <li><a href="/">Accueil</a></li>
+      <li aria-current="page">Acte de naissance</li>
+    </ol>
+  </nav>
+
   <main>
 
     <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-inner">
-        <div>
-          <span class="hero-eyebrow">Service privé d'assistance</span>
-          <h1 id="hero-title">Demandez votre acte de naissance en 2 minutes.</h1>
-          <p class="hero-subtitle">Service privé d'assistance administrative. Acte de naissance traité sous 24 heures, livré chez vous par la mairie compétente.</p>
-
-          <div class="hero-disclaimer">
-            <strong>En toute transparence :</strong> cette démarche peut être effectuée gratuitement sur service-public.fr. Notre service vous fait gagner du temps et vous accompagne du début à la fin.
-          </div>
-
-          <div class="hero-ctas">
-            <a href="/commande/" class="btn btn-primary btn-lg">Commencer ma demande</a>
-            <a href="#comment-ca-marche" class="btn btn-secondary btn-lg">Voir comment ça marche</a>
-          </div>
-
-          <div class="hero-trust">
-            <span><span class="check">✓</span> Sans déplacement</span>
-            <span><span class="check">✓</span> Frais postaux inclus</span>
-            <span><span class="check">✓</span> Conseiller dédié</span>
-            <span><span class="check">✓</span> Paiement sécurisé</span>
-          </div>
-        </div>
-
-        <!-- Visuel : aperçu du formulaire (différenciation) -->
-        <div class="hero-visual" aria-hidden="true">
-          <div class="preview-form">
-            <div class="preview-label">Étape 1 — Vos informations</div>
-            <div class="preview-field filled">Sophie Martin</div>
-            <div class="preview-field filled">15 mars 1978 · Bordeaux</div>
-            <div class="preview-field">Type d'acte demandé</div>
-
-            <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);">
-              <div class="preview-step done"><span class="step-num">✓</span> Demande envoyée à la mairie</div>
-              <div class="preview-step done"><span class="step-num">✓</span> Traitement en cours · 24h</div>
-              <div class="preview-step todo"><span class="step-num">3</span> Réception sous 3 à 10 jours</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMMENT ÇA MARCHE -->
-    <section class="section" id="comment-ca-marche" aria-labelledby="how-title">
+    <section class="page-hero" aria-labelledby="page-title">
       <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Notre processus</span>
-          <h2 id="how-title">Trois étapes simples, zéro démarche complexe</h2>
-          <p>Du formulaire en ligne à la réception de votre acte, nous prenons en charge l'ensemble des démarches auprès de la mairie compétente.</p>
+        <span class="hero-eyebrow">Démarche d'état civil</span>
+        <h1 id="page-title">Demande d'acte de naissance en ligne</h1>
+        <p class="lede">Obtenez votre acte de naissance (copie intégrale, extrait avec ou sans filiation) sans vous déplacer. Service privé d'assistance avec traitement sous 24 heures et livraison par la mairie compétente.</p>
+
+        <div class="hero-disclaimer">
+          <strong>En toute transparence :</strong> cette démarche est gratuite sur service-public.fr. Démarchéo vous accompagne pour vous faire gagner du temps.
         </div>
 
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-number">01</div>
-            <h3>Remplissez le formulaire</h3>
-            <p>2 minutes pour renseigner vos informations d'état civil et choisir le type d'acte. Paiement sécurisé par Stripe.</p>
-          </article>
-          <article class="step-card">
-            <div class="step-number">02</div>
-            <h3>Nous traitons votre demande</h3>
-            <p>Sous 24 heures ouvrées, votre conseiller dédié vérifie votre dossier et transmet la demande à la mairie de votre commune de naissance.</p>
-          </article>
-          <article class="step-card">
-            <div class="step-number">03</div>
-            <h3>Recevez votre acte</h3>
-            <p>L'acte officiel vous est envoyé directement par la mairie à votre adresse postale, sous 3 à 10 jours selon la commune.</p>
-          </article>
+        <div class="hero-ctas">
+          <a href="/commande/" class="btn btn-primary btn-lg">Commencer ma demande</a>
+          <a href="#types-actes" class="btn btn-secondary btn-lg">Voir les différents types d'actes</a>
         </div>
       </div>
     </section>
 
-    <!-- POUR QUI -->
-    <section class="section section-alt" aria-labelledby="usecase-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Cas d'usage</span>
-          <h2 id="usecase-title">Dans quelle situation êtes-vous ?</h2>
-          <p>Quelle que soit la raison de votre demande, nous adaptons l'accompagnement à votre situation.</p>
+    <!-- CONTENU PRINCIPAL : 2 colonnes -->
+    <div class="page-content">
+
+      <!-- Article principal -->
+      <article>
+
+        <h2 id="definition">Qu'est-ce qu'un acte de naissance ?</h2>
+        <p>L'acte de naissance est un <strong>document officiel d'état civil</strong> rédigé par un officier de mairie au moment de la déclaration de naissance d'un enfant. Il constitue la preuve légale de l'identité d'une personne et fait foi devant toutes les administrations françaises.</p>
+        <p>Ce document contient l'ensemble des informations relatives à la naissance : nom, prénoms, sexe, date, heure et lieu de naissance, mais aussi les informations sur les parents et d'éventuelles mentions marginales (mariage, divorce, décès, changement de nom, déclaration de nationalité).</p>
+        <p>L'acte de naissance est exigé pour de nombreuses démarches courantes : constitution d'un dossier de mariage, demande de passeport ou de carte d'identité, succession, dossier de naturalisation, inscription scolaire, recherche généalogique, ou encore demande de pension.</p>
+
+        <div class="callout">
+          <h3>À retenir</h3>
+          <p>L'acte de naissance est délivré par la <strong>mairie de la commune de naissance</strong> de la personne concernée — et non par sa mairie de résidence actuelle.</p>
+          <p>Pour les personnes nées à l'étranger de nationalité française, la demande est traitée par le Service Central d'État Civil (SCEC) à Nantes.</p>
         </div>
 
-        <div class="usecases">
-          <article class="usecase">
-            <div class="usecase-icon" aria-hidden="true">⚭</div>
-            <h3>Mariage civil</h3>
-            <p>Vous préparez votre dossier de mariage et la mairie exige un acte récent de moins de 3 mois.</p>
-          </article>
-          <article class="usecase">
-            <div class="usecase-icon" aria-hidden="true">⚖</div>
-            <h3>Succession</h3>
-            <p>Vous gérez une succession et avez besoin de plusieurs actes pour le notaire. Pack famille disponible.</p>
-          </article>
-          <article class="usecase">
-            <div class="usecase-icon" aria-hidden="true">✈</div>
-            <h3>Passeport / CNI</h3>
-            <p>Votre demande de passeport ou de carte d'identité nécessite un acte récent avec filiation.</p>
-          </article>
-          <article class="usecase">
-            <div class="usecase-icon" aria-hidden="true">🌳</div>
-            <h3>Recherche familiale</h3>
-            <p>Vous recherchez un ancêtre, préparez un dossier de naturalisation ou un projet généalogique.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+        <h2 id="types-actes">Les 3 types d'actes de naissance</h2>
+        <p>Selon votre démarche, vous pouvez demander l'une des trois formes officielles d'acte de naissance. Chacune contient un niveau de détail différent et obéit à des règles d'accès spécifiques.</p>
 
-    <!-- TARIFS -->
-    <section class="section" id="tarifs" aria-labelledby="pricing-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Tarifs</span>
-          <h2 id="pricing-title">Une tarification claire, sans surprise</h2>
-          <p>Frais postaux inclus, traitement transparent, aucun engagement.</p>
-        </div>
+        <h3>Copie intégrale</h3>
+        <p>La copie intégrale est la <strong>reproduction stricte de l'acte de naissance original</strong>. Elle contient l'ensemble des informations enregistrées par l'officier d'état civil : identité du titulaire, identité complète des deux parents, et l'intégralité des mentions marginales ajoutées au fil du temps.</p>
+        <p>C'est le document à privilégier pour les démarches administratives sensibles : <strong>mariage civil, passeport, naturalisation, succession, divorce</strong>. La plupart des administrations exigent une copie intégrale datée de moins de 3 mois.</p>
 
-        <div class="pricing">
-          <article class="price-card">
-            <h3>Essentiel</h3>
-            <p class="price-desc">Pour une demande standard sans contrainte de délai.</p>
-            <div>
-              <span class="price-currency">€</span><span class="price-amount">34</span>
-              <span class="price-suffix">TTC · paiement unique</span>
-            </div>
-            <ul class="price-features">
-              <li>1 acte de naissance (au choix)</li>
-              <li>Traitement sous 24 heures ouvrées</li>
-              <li>Frais postaux inclus</li>
-              <li>Suivi par email</li>
-              <li>Conseiller dédié par email</li>
-            </ul>
-            <a href="/commande/?offer=essentiel" class="btn btn-secondary">Choisir cette offre</a>
-          </article>
+        <h3>Extrait avec filiation</h3>
+        <p>L'extrait avec filiation est une <strong>synthèse de l'acte de naissance</strong> qui reprend les informations essentielles concernant le titulaire ainsi que celles des parents (nom, prénoms, date et lieu de naissance, profession le cas échéant). Les mentions marginales pertinentes y figurent également.</p>
+        <p>Ce document est utile lorsque vous devez prouver votre filiation sans avoir besoin de la version intégrale. Il est notamment accepté pour la plupart des démarches de carte d'identité et de passeport.</p>
 
-          <article class="price-card featured">
-            <div class="price-badge">Le plus choisi</div>
-            <h3>Express</h3>
-            <p class="price-desc">Traitement prioritaire pour les démarches urgentes.</p>
-            <div>
-              <span class="price-currency">€</span><span class="price-amount">49</span>
-              <span class="price-suffix">TTC · paiement unique</span>
-            </div>
-            <ul class="price-features">
-              <li>1 acte de naissance (au choix)</li>
-              <li>Traitement prioritaire sous 4h ouvrées</li>
-              <li>Frais postaux inclus</li>
-              <li>Suivi par email <strong>et SMS</strong></li>
-              <li>Hotline conseiller dédié</li>
-              <li>Garantie satisfait ou remboursé</li>
-            </ul>
-            <a href="/commande/?offer=express" class="btn btn-primary">Choisir Express</a>
-          </article>
+        <h3>Extrait sans filiation</h3>
+        <p>L'extrait sans filiation est la <strong>version la plus succincte</strong> de l'acte de naissance. Il ne contient que les informations relatives au titulaire (nom, prénoms, date et lieu de naissance) et certaines mentions marginales, mais ne mentionne pas les parents.</p>
+        <p>Sa particularité : il peut être demandé <strong>par toute personne, sans justificatif</strong>, ce qui en fait le document de référence pour les démarches simples ne nécessitant pas la preuve de filiation.</p>
 
-          <article class="price-card">
-            <h3>Pack famille</h3>
-            <p class="price-desc">Idéal pour une succession ou plusieurs membres d'une famille.</p>
-            <div>
-              <span class="price-currency">€</span><span class="price-amount">79</span>
-              <span class="price-suffix">TTC · économie de 23€</span>
-            </div>
-            <ul class="price-features">
-              <li><strong>3 actes de naissance</strong> au choix</li>
-              <li>Traitement sous 24 heures ouvrées</li>
-              <li>Frais postaux inclus pour les 3</li>
-              <li>Suivi par email</li>
-              <li>Conseiller dédié</li>
-            </ul>
-            <a href="/commande/?offer=famille" class="btn btn-secondary">Choisir le pack</a>
-          </article>
+        <h3>Acte plurilingue (pour l'étranger)</h3>
+        <p>L'acte plurilingue est une <strong>traduction officielle</strong> de la copie intégrale ou de l'extrait. Il est utilisé pour les démarches administratives à l'étranger et évite de recourir à un traducteur assermenté. La liste des langues disponibles est définie par le Service Public.</p>
+
+        <h3>Tableau comparatif</h3>
+        <div class="compare-table-wrapper">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Critère</th>
+                <th>Copie intégrale</th>
+                <th>Extrait avec filiation</th>
+                <th>Extrait sans filiation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Niveau de détail</td>
+                <td>Reproduction complète</td>
+                <td>Synthèse avec parents</td>
+                <td>Synthèse seule</td>
+              </tr>
+              <tr>
+                <td>Mentions des parents</td>
+                <td>Oui, complètes</td>
+                <td>Oui</td>
+                <td>Non</td>
+              </tr>
+              <tr>
+                <td>Mentions marginales</td>
+                <td>Toutes</td>
+                <td>Principales</td>
+                <td>Principales</td>
+              </tr>
+              <tr>
+                <td>Accès</td>
+                <td>Justificatif requis</td>
+                <td>Justificatif requis</td>
+                <td>Libre, sans justificatif</td>
+              </tr>
+              <tr>
+                <td>Usage principal</td>
+                <td>Mariage, succession, naturalisation</td>
+                <td>CNI, passeport, formalités</td>
+                <td>Démarches simples</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- Bloc transparence — bouclier juridique + USP -->
-        <div class="transparency-box">
-          <h3>Pourquoi payer pour un service gratuit ?</h3>
-          <p>Nous ne le cachons pas : la demande d'acte de naissance est <strong>gratuite</strong> sur service-public.fr. Notre service vous fait gagner du temps en prenant en charge l'intégralité du processus : vérification des informations, contact avec la mairie compétente, suivi du traitement et relances si nécessaire.</p>
-          <p>Vous payez pour l'accompagnement, pas pour le document lui-même — qui reste émis et envoyé par la mairie officielle.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRUST / TÉMOIGNAGES -->
-    <section class="section section-alt" aria-labelledby="trust-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Ils nous ont fait confiance</span>
-          <h2 id="trust-title">Un service utilisé par des milliers de Français</h2>
+        <div class="inline-cta">
+          <p>Pas sûr du type d'acte dont vous avez besoin ? Notre conseiller vous oriente avant la demande.</p>
+          <a href="/commande/" class="btn btn-primary">Démarrer ma demande</a>
         </div>
 
-        <div class="trust-stats">
-          <div class="trust-stat">
-            <span class="stat-number">12 000+</span>
-            <span class="stat-label">demandes traitées</span>
+        <h2 id="comment-obtenir">Comment obtenir votre acte de naissance avec Démarchéo</h2>
+        <p>Notre service prend en charge l'ensemble du processus, de la qualification de votre demande jusqu'à la réception de l'acte officiel à votre domicile.</p>
+
+        <h3>Étape 1 — Vous renseignez le formulaire en ligne</h3>
+        <p>En 2 minutes, vous saisissez les informations nécessaires : type d'acte souhaité, identité du titulaire, lien de filiation si requis, adresse de livraison. Le formulaire est sécurisé et vos données chiffrées.</p>
+
+        <h3>Étape 2 — Nous traitons votre dossier sous 24 heures</h3>
+        <p>Votre conseiller dédié vérifie l'exactitude des informations, identifie la <strong>mairie compétente</strong> (mairie de naissance, ou SCEC Nantes pour les Français nés à l'étranger) et transmet la demande officielle. En cas de besoin, nous effectuons les relances nécessaires.</p>
+
+        <h3>Étape 3 — Vous recevez votre acte par courrier</h3>
+        <p>L'acte officiel est envoyé directement par la mairie compétente à l'adresse postale indiquée. Le délai moyen de réception est de 3 à 10 jours ouvrés selon la commune. Vous êtes tenu informé à chaque étape par email.</p>
+
+        <h2 id="qui-peut-demander">Qui peut demander un acte de naissance ?</h2>
+        <p>Les conditions d'accès dépendent du type d'acte demandé. Les règles ci-dessous s'appliquent aux copies intégrales et extraits avec filiation, les plus restrictifs.</p>
+
+        <ul class="check-list">
+          <li><strong>La personne concernée</strong> par l'acte (majeure)</li>
+          <li><strong>Son conjoint</strong>, qu'il soit marié ou pacsé</li>
+          <li><strong>Ses ascendants</strong> : parents, grands-parents</li>
+          <li><strong>Ses descendants</strong> : enfants, petits-enfants</li>
+          <li><strong>Un avocat mandaté</strong> pour le compte de l'intéressé</li>
+          <li>Le <strong>représentant légal</strong> d'un mineur ou d'une personne sous tutelle</li>
+        </ul>
+
+        <p>Pour l'<strong>extrait sans filiation</strong>, aucune condition n'est requise : toute personne peut en faire la demande sans justificatif particulier.</p>
+
+        <div class="callout callout-warning">
+          <h4>Cas particulier : actes anciens</h4>
+          <p>Pour les actes de naissance de <strong>plus de 75 ans</strong> (à compter de la clôture du registre) ou ceux concernant des personnes décédées depuis plus de 25 ans, les règles d'accès sont libéralisées et toute personne peut y accéder, généralement via les archives départementales.</p>
+        </div>
+
+        <h2 id="documents-necessaires">Documents et informations nécessaires</h2>
+        <p>Pour traiter votre demande dans les meilleurs délais, vous devrez nous communiquer plusieurs informations. Voici la liste exhaustive selon votre situation.</p>
+
+        <h3>Informations sur le titulaire de l'acte</h3>
+        <ul class="check-list">
+          <li>Nom de naissance et prénoms complets</li>
+          <li>Date de naissance précise</li>
+          <li>Lieu de naissance (commune et département)</li>
+          <li>Sexe</li>
+        </ul>
+
+        <h3>Informations sur les parents (pour copie intégrale et extrait avec filiation)</h3>
+        <ul class="check-list">
+          <li>Nom et prénoms du père</li>
+          <li>Nom de naissance et prénoms de la mère</li>
+        </ul>
+
+        <h3>Documents justificatifs (selon le cas)</h3>
+        <ul class="check-list">
+          <li>Pièce d'identité du demandeur (CNI, passeport)</li>
+          <li>Justificatif de lien de parenté (livret de famille, propre acte de naissance) si vous demandez l'acte d'un tiers</li>
+          <li>Adresse postale complète pour la livraison</li>
+        </ul>
+
+        <h2 id="cas-particuliers">Cas particuliers</h2>
+
+        <h3>Français nés à l'étranger</h3>
+        <p>Si vous êtes de nationalité française et né(e) à l'étranger, la mairie compétente n'est pas une mairie française classique : c'est le <strong>Service Central d'État Civil (SCEC)</strong> rattaché au ministère des Affaires étrangères à Nantes. Nous prenons en charge cette demande spécifique avec un suivi adapté. Le délai peut être légèrement plus long (10 à 20 jours ouvrés).</p>
+
+        <h3>Personnes nées dans un État devenu indépendant</h3>
+        <p>Pour les personnes nées dans un pays anciennement sous administration française (notamment <strong>Algérie, Maroc, Tunisie</strong>, anciennes colonies), la demande doit être adressée au SCEC de Nantes via un téléservice dédié. Démarchéo gère également cette catégorie de demandes.</p>
+
+        <h3>Recherche d'actes anciens (généalogie)</h3>
+        <p>Pour les actes de plus de 75 ans, la demande s'adresse généralement aux <strong>archives départementales</strong> de la commune de naissance. Selon les communes, les frais de reproduction peuvent s'appliquer en plus du traitement. Nous vous accompagnons dans ces démarches particulières souvent complexes.</p>
+
+        <h3>Acte plurilingue pour démarches à l'étranger</h3>
+        <p>Si vous devez utiliser votre acte de naissance dans un autre pays européen, un acte plurilingue vous évitera de recourir à un traducteur assermenté. Mentionnez votre besoin lors de la demande : nous demandons directement le format adapté à la mairie compétente.</p>
+
+        <h2 id="delais">Délais de traitement et de réception</h2>
+        <p>Voici les délais constatés en moyenne pour une demande d'acte de naissance via Démarchéo.</p>
+
+        <ul class="check-list">
+          <li><strong>Traitement de votre dossier par nos équipes :</strong> sous 24 heures ouvrées</li>
+          <li><strong>Transmission à la mairie compétente :</strong> immédiate après validation</li>
+          <li><strong>Délivrance par la mairie :</strong> 2 à 5 jours ouvrés en moyenne</li>
+          <li><strong>Envoi postal :</strong> 1 à 3 jours selon la zone</li>
+          <li><strong>Délai total moyen :</strong> 5 à 10 jours ouvrés</li>
+        </ul>
+
+        <p>Pour les Français nés à l'étranger (SCEC Nantes), le délai total se situe entre 10 et 20 jours ouvrés. Pour les actes anciens en archives départementales, le délai peut atteindre 3 à 4 semaines selon les dépôts.</p>
+
+        <div class="callout">
+          <h3>Validité d'un acte de naissance</h3>
+          <p>Un acte de naissance n'a pas de date de péremption stricte, mais la <strong>plupart des administrations exigent qu'il soit daté de moins de 3 mois</strong> au moment de son utilisation (mariage, passeport, succession). Demandez-le donc au plus près de la date où vous en avez besoin.</p>
+        </div>
+
+        <h2 id="faq">Questions fréquentes</h2>
+
+        <details class="faq-item">
+          <summary>Qu'est-ce qu'une mention marginale ?</summary>
+          <div class="faq-body">
+            Les mentions marginales sont des annotations ajoutées en marge de l'acte de naissance original pour refléter les événements importants de la vie civile : mariage, divorce, PACS, changement de nom, reconnaissance, décès, déclaration de nationalité. Elles figurent obligatoirement sur la copie intégrale.
           </div>
-          <div class="trust-stat">
-            <span class="stat-number">4,8/5</span>
-            <span class="stat-label">note moyenne client</span>
+        </details>
+
+        <details class="faq-item">
+          <summary>Puis-je demander un acte de naissance pour un parent décédé ?</summary>
+          <div class="faq-body">
+            Oui, sous conditions. Si vous êtes descendant direct (enfant, petit-enfant), vous pouvez demander la copie intégrale ou l'extrait avec filiation en justifiant du lien de parenté. Pour les actes datant de plus de 25 ans après le décès, les conditions d'accès sont assouplies.
           </div>
-          <div class="trust-stat">
-            <span class="stat-number">22h</span>
-            <span class="stat-label">délai de traitement moyen</span>
+        </details>
+
+        <details class="faq-item">
+          <summary>Mon acte de naissance comporte une erreur, que faire ?</summary>
+          <div class="faq-body">
+            Une rectification d'acte d'état civil ne relève pas de la même démarche qu'une simple demande. Si vous constatez une erreur (orthographe, date, filiation), il faut saisir le procureur de la République du tribunal judiciaire dont dépend la mairie de naissance. Nous pouvons vous orienter vers la bonne procédure.
           </div>
-          <div class="trust-stat">
-            <span class="stat-number">98%</span>
-            <span class="stat-label">taux de satisfaction</span>
+        </details>
+
+        <details class="faq-item">
+          <summary>Combien de temps un acte de naissance reste-t-il valable ?</summary>
+          <div class="faq-body">
+            Un acte de naissance n'expire pas en lui-même, mais les administrations exigent généralement qu'il date de moins de 3 mois pour les démarches sensibles (mariage, passeport, succession). Pour un simple justificatif d'identité, des délais plus longs peuvent être acceptés.
           </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Est-il possible d'avoir un acte de naissance numérique ?</summary>
+          <div class="faq-body">
+            La plupart des actes de naissance sont aujourd'hui envoyés en version papier par la mairie. Certaines mairies proposent une transmission dématérialisée via le téléservice COMEDEC, mais ce dispositif est réservé aux échanges entre administrations et notaires, pas aux particuliers.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment savoir quelle mairie est compétente ?</summary>
+          <div class="faq-body">
+            La mairie compétente est toujours celle de la <strong>commune de naissance</strong> du titulaire, et non celle de sa résidence actuelle. Pour les naissances à Paris, la compétence est désormais centralisée entre les mairies d'arrondissement. Pour les Français nés à l'étranger, c'est le SCEC de Nantes. Nous identifions automatiquement la bonne autorité.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Démarchéo est-il un site officiel de l'administration ?</summary>
+          <div class="faq-body">
+            Non. Démarchéo est un service privé indépendant de l'administration française. Nous ne sommes ni mandatés ni affiliés à l'État. Toutes les démarches que nous proposons peuvent être effectuées gratuitement sur le site officiel <a href="https://www.service-public.fr" target="_blank" rel="noopener">service-public.fr</a>. Notre service consiste à vous accompagner et à prendre en charge ces démarches pour vous faire gagner du temps.
+          </div>
+        </details>
+
+        <h2 id="engagement">Notre engagement de transparence</h2>
+        <div class="callout">
+          <h3>Démarchéo en toute clarté</h3>
+          <p>La demande d'acte de naissance est <strong>gratuite</strong> sur le site officiel service-public.fr. Démarchéo est un service privé qui vous accompagne dans cette démarche : nous vérifions vos informations, transmettons votre dossier à la mairie compétente, assurons le suivi et les relances éventuelles.</p>
+          <p>L'acte officiel reste émis et envoyé par la mairie compétente. Notre rôle est de vous faire gagner du temps et de simplifier le processus, pas de remplacer l'administration.</p>
         </div>
 
-        <div class="testimonials">
-          <article class="testimonial">
-            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
-            <p class="testimonial-quote">"Service ultra-rapide pour mon dossier de mariage. J'avais la mairie au téléphone toutes les semaines, là j'ai juste rempli le formulaire et reçu l'acte 4 jours après."</p>
-            <p class="testimonial-author"><strong>Sophie M.</strong> · Bordeaux</p>
-          </article>
-          <article class="testimonial">
-            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
-            <p class="testimonial-quote">"J'ai géré la succession de mon père depuis l'étranger. Pack famille parfait, j'ai économisé des heures de démarches consulaires."</p>
-            <p class="testimonial-author"><strong>Karim B.</strong> · Montréal</p>
-          </article>
-          <article class="testimonial">
-            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
-            <p class="testimonial-quote">"Le conseiller m'a appelée pour clarifier une info, très pro. La transparence sur le fait que c'est gratuit ailleurs m'a mise en confiance dès le départ."</p>
-            <p class="testimonial-author"><strong>Catherine L.</strong> · Lyon</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="container-narrow">
-        <div class="section-header">
-          <span class="eyebrow">Questions fréquentes</span>
-          <h2 id="faq-title">Tout ce que vous devez savoir avant de commander</h2>
+        <div class="inline-cta">
+          <p>Prêt à commander votre acte de naissance ?<br>Remplissez le formulaire en 2 minutes, nous nous occupons du reste.</p>
+          <a href="/commande/" class="btn btn-primary btn-lg">Commencer ma demande</a>
         </div>
 
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary>Démarchéo est-il un site officiel de l'administration française ?</summary>
-            <div class="faq-body">
-              Non. Démarchéo est un service privé indépendant de l'administration française. Nous ne sommes ni mandatés ni affiliés à l'État. Toutes les démarches que nous proposons peuvent être effectuées gratuitement par vous-même sur le site officiel service-public.fr. Notre service consiste à vous accompagner et à prendre en charge ces démarches pour vous faire gagner du temps.
-            </div>
-          </details>
+      </article>
 
-          <details class="faq-item">
-            <summary>Qui délivre réellement l'acte de naissance ?</summary>
-            <div class="faq-body">
-              L'acte de naissance est délivré par la mairie de votre commune de naissance (ou le Service Central d'État Civil de Nantes pour les Français nés à l'étranger). Démarchéo prend en charge la demande pour votre compte, mais le document officiel est émis et envoyé par la mairie compétente.
-            </div>
-          </details>
+      <!-- Sommaire latéral sticky -->
+      <aside class="toc" aria-label="Sommaire de la page">
+        <p class="toc-title">Dans cet article</p>
+        <ol>
+          <li><a href="#definition">Définition</a></li>
+          <li><a href="#types-actes">Les 3 types d'actes</a></li>
+          <li><a href="#comment-obtenir">Comment obtenir</a></li>
+          <li><a href="#qui-peut-demander">Qui peut demander</a></li>
+          <li><a href="#documents-necessaires">Documents nécessaires</a></li>
+          <li><a href="#cas-particuliers">Cas particuliers</a></li>
+          <li><a href="#delais">Délais</a></li>
+          <li><a href="#faq">Questions fréquentes</a></li>
+          <li><a href="#engagement">Engagement</a></li>
+        </ol>
+      </aside>
 
-          <details class="faq-item">
-            <summary>Combien de temps pour recevoir mon acte de naissance ?</summary>
-            <div class="faq-body">
-              Notre délai de traitement est de 24 heures ouvrées (4h en offre Express). Une fois la demande transmise à la mairie, le délai d'envoi par courrier varie selon les communes : généralement entre 3 et 10 jours ouvrés. Nous vous tenons informé à chaque étape.
-            </div>
-          </details>
+    </div>
 
-          <details class="faq-item">
-            <summary>Quels types d'actes de naissance puis-je demander ?</summary>
-            <div class="faq-body">
-              Nous traitons les trois types d'actes : la <strong>copie intégrale</strong> (toutes les informations, exigée pour mariage, passeport, naturalisation), l'<strong>extrait avec filiation</strong> (informations personnelles + parents) et l'<strong>extrait sans filiation</strong> (informations personnelles uniquement, accessible sans justificatif).
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Puis-je être remboursé si ma demande n'aboutit pas ?</summary>
-            <div class="faq-body">
-              Oui. Si pour une raison quelconque nous ne parvenons pas à obtenir votre acte de naissance auprès de la mairie compétente (sauf erreur dans les informations transmises), vous êtes intégralement remboursé. Vous disposez également d'un droit de rétractation de 14 jours conformément au Code de la consommation.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Mes données personnelles sont-elles sécurisées ?</summary>
-            <div class="faq-body">
-              Oui. Démarchéo respecte le Règlement Général sur la Protection des Données (RGPD). Vos informations sont chiffrées (HTTPS), stockées en France, et utilisées exclusivement pour le traitement de votre demande. Elles ne sont jamais revendues à des tiers. Voir notre <a href="/politique-confidentialite/">politique de confidentialité</a>.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Je suis né à l'étranger, puis-je utiliser Démarchéo ?</summary>
-            <div class="faq-body">
-              Oui, à condition d'être de nationalité française. Pour les Français nés à l'étranger, nous transmettons votre demande au Service Central d'État Civil (SCEC) de Nantes, qui est l'autorité compétente. Le délai peut être légèrement plus long (10 à 20 jours).
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA FINAL -->
+    <!-- CTA final pleine largeur -->
     <section class="final-cta">
       <div class="container-narrow">
-        <h2>Prêt à demander votre acte de naissance ?</h2>
-        <p>Remplissez le formulaire en 2 minutes. Nous nous occupons du reste. Vous recevez votre acte chez vous.</p>
-        <a href="/commande/" class="btn btn-primary btn-lg">Commencer ma demande — 34€</a>
+        <h2>Demandez votre acte de naissance dès maintenant</h2>
+        <p>Service privé d'assistance. Traitement sous 24 heures. Acte envoyé par la mairie compétente directement à votre domicile.</p>
+        <a href="/commande/" class="btn btn-primary btn-lg">Commencer ma demande</a>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
+  <!-- Footer (identique homepage) -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -410,7 +427,6 @@
           <span class="logo"><span class="logo-mark" aria-hidden="true"></span>Démarchéo</span>
           <p>Service privé d'assistance aux démarches administratives. Indépendant de l'administration française.</p>
         </div>
-
         <div class="footer-col">
           <h4>Démarches</h4>
           <ul>
@@ -419,18 +435,15 @@
             <li><a href="/acte-de-naissance/extrait/">Extrait d'acte</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h4>Démarchéo</h4>
           <ul>
             <li><a href="/comment-ca-marche/">Comment ça marche</a></li>
-            <li><a href="/tarifs/">Tarifs</a></li>
             <li><a href="/a-propos/">À propos</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/contact/">Contact</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h4>Mentions légales</h4>
           <ul>
@@ -441,11 +454,9 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-disclaimer">
         <strong>Information importante :</strong> Le site et les services proposés par Démarchéo sont fournis à titre privé et ne constituent en aucun cas une mission de service public déléguée par une administration ou une collectivité territoriale. Il est possible d'effectuer ces démarches gratuitement sur <a href="https://www.service-public.fr" style="color: #C8A961;" target="_blank" rel="noopener">service-public.fr</a>.
       </div>
-
       <div class="footer-bottom">
         <p>© 2026 Démarchéo — Tous droits réservés</p>
         <p>SAS au capital de X € · SIRET XXX XXX XXX 00000 · RCS Paris</p>
@@ -453,6 +464,6 @@
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="../script.js" defer></script>
 </body>
 </html>
